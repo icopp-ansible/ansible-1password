@@ -8,7 +8,6 @@
   when: ansible_os_family == "Darwin" and prefer_mas_over_homebrew == true
 
 - name: Install 1Password via Homebrew
-  package:
+  homebrew_cask:
     name: 1password
-    state: present
   when: ansible_os_family == "Darwin" and prefer_mas_over_homebrew == false
