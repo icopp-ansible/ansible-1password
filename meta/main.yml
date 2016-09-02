@@ -12,12 +12,5 @@ galaxy_info:
     - application
 
 dependencies:
-  - name: icopp.mas-cli
-    src: https://github.com/icopp/ansible-mas-cli.git
-    scm: git
-    when: prefer_mas_over_homebrew == true
-
-  - name: icopp.homebrew
-    src: https://github.com/icopp/ansible-homebrew.git
-    scm: git
-    when: prefer_mas_over_homebrew == false
+  - src: icopp.mas-cli
+  - src: icopp.homebrew
