@@ -1,0 +1,15 @@
+---
+
+- name: Install 1Password via Mac App Store
+  command: mas install "{{ item.id }}"
+  args:
+    creates: /Applications/{{ item.name }}.app
+  with_items:
+    - { id: 443987910, name: "1Password" }
+  when: ansible_os_family == "Darwin" and prefer_mas_over_homebrew == true
+
+- name: Install 1Password via Homebrew
+  package:
+    name: 1password
+    state: present
+  when: ansible_os_family == "Darwin" and prefer_mas_over_homebrew == false
