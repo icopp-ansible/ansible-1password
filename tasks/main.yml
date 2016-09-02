@@ -1,5 +1,4 @@
 ---
-
 - name: Install 1Password via Mac App Store
   command: mas install "{{ item.id }}"
   args:

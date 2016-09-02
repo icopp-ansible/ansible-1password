@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Ian Copp
   description: Install 1Password. Does nothing on non-macOS platforms.
