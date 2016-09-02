@@ -13,4 +13,7 @@ galaxy_info:
 
 dependencies:
   - role: icopp.mas-cli
+    when: ansible_os_family == "Darwin"
+
   - role: icopp.homebrew
+    when: ansible_os_family == "Darwin"
