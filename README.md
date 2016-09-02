@@ -1,6 +1,6 @@
 # ansible-1password
 
-Install 1Password. Does nothing on non-macOS platforms.
+Install 1Password via the Mac App Store or Homebrew. Does nothing on non-macOS platforms.
 
 ## Role Variables
 
