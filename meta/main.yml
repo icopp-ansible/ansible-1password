@@ -12,5 +12,5 @@ galaxy_info:
     - application
 
 dependencies:
-  - src: icopp.mas-cli
-  - src: icopp.homebrew
+  - role: icopp.mas-cli
+  - role: icopp.homebrew
