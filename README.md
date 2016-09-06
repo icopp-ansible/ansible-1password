@@ -1,6 +1,6 @@
 # ansible-1password
 
-Install 1Password via the Mac App Store or Homebrew Cask. Does nothing on non-macOS platforms.
+Install 1Password via the Mac App Store or Homebrew Cask.
 
 ## Role Variables
 
@@ -8,8 +8,8 @@ Install 1Password via the Mac App Store or Homebrew Cask. Does nothing on non-ma
 
 ## Dependencies
 
-* [icopp.mas-cli](https://github.com/icopp/ansible-mas-cli) (included as repository dependency), but only if `prefer_mas_over_homebrew` is `true`.
-* [icopp.homebrew-cask](https://github.com/icopp/ansible-homebrew-cask) (included as repository dependency), but only if `prefer_mas_over_homebrew` is `false`.
+* [icopp.mas-cli](https://github.com/icopp/ansible-mas-cli), but only if `prefer_mas_over_homebrew` is `true`.
+* [icopp.homebrew-cask](https://github.com/icopp/ansible-homebrew-cask), but only if `prefer_mas_over_homebrew` is `false`.
 
 ## Example Playbook
 
